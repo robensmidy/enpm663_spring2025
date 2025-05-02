@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>frame_demo</name>
+  <version>0.0.0</version>
+  <description>
+    A demonstration package for teaching ROS 2 coordinate frames, transforms, and kinematic trees using tf2, KDL, and Eigen.
+    This package introduces students to how frames are created, transformed, and managed within robotic systems.
+  </description>
+  <maintainer email="zeidk@umd.edu">zeid</maintainer>
+  <license>BSD-3-Clause</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Dependencies for both building and execution -->
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>kdl_parser</depend>
+  <depend>ariac_msgs</depend>
+  <depend>tf2_eigen</depend>
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>orocos_kdl_vendor</depend>
+  <depend>python_orocos_kdl_vendor</depend>
+  <depend>tf2_ros</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
