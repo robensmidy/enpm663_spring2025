@@ -1584,7 +1584,7 @@ class RobotController(Node):
         gripper state for use in decision making and planning.
 
         Args:
-            msg (VacuumGripperState): Message containing the current gripper state
+            msg (VacuumGripperState): Message containing the current gripper state_gripper_state_future
         """
         self._floor_robot_gripper_state = msg
 
